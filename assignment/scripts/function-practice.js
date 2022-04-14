@@ -25,7 +25,8 @@ function addNumbers( firstNumber, secondNumber ) {
   // return firstNumber + secondNumber;
   return firstNumber + secondNumber;
 }
-console.log('The humber is:', addNumbers(6, 4));
+console.log('The number should be 10:', addNumbers(6, 4));
+console.log('The number should be -5:', addNumbers(-2, -3));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( firstNumber, secondNumber, thirdNumber){
@@ -37,10 +38,13 @@ console.log('multiplyThree returns:', multiplyThree(2.3, 3.5, 4.7));
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+    return false;
 }
+console.log('The number should be negative:', isPositive(-3));
+console.log('The number should be positive:', isPositive(3));
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
