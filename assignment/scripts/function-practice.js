@@ -64,18 +64,23 @@ function getLast( array ) {
   }
 }
 console.log('last number should be 5:', getLast([2, 4, 12, 5]));
-console.log('last number should be chair:', getLast(['pizza', 'airplane', 'plate' , 'chair' ]));
+console.log('last string should be chair:', getLast(['pizza', 'airplane', 'plate' , 'chair' ]));
 console.log('last number should be 5:', getLast([]));
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
-  for(i=0; i< array.length -1; i++){
-    
-  }
-
+  for(i=0; i<array.length ; i++){
+    //console.log(value, array[i]);
+    if (value === array[i]){
+    return true;
+  } 
 }
+return false;
+}
+console.log('is 5 in the array, yes:', find(5, [4, 28, 23, 78, 5]));
+console.log('is 5 in the array, no:', find(5, ['car', 'teapot', 'armrest']));
 
 // ----------------------
 // Stretch Goals
